@@ -19,7 +19,7 @@
 
 ## 安装到不同 Agent
 
-下载本仓库，**保留整个 `career-evidence-bank` 文件夹**及其中的 `SKILL.md`、`references/`。将文件夹放进所用 Agent 的技能目录；`~` 表示用户主目录，Windows 下可对应 `%USERPROFILE%`。以下路径来自各产品文档，是安装示例，不表示我们已在每个平台完成运行测试。
+下载本仓库，**保留整个 `career-evidence-bank` 文件夹**及其中的 `SKILL.md`、`references/`。若 GitHub 下载的 ZIP 解压后文件夹名带有 `-main` 等后缀，请改名为 `career-evidence-bank`；最终结构应为 `技能目录/career-evidence-bank/SKILL.md`。将文件夹放进所用 Agent 的技能目录；`~` 表示用户主目录，Windows 下可对应 `%USERPROFILE%`。以下路径来自各产品文档，是安装示例，不表示我们已在每个平台完成运行测试。
 
 | Agent | 用户级目录或导入方式 | 项目级目录 |
 |---|---|---|
@@ -27,11 +27,11 @@
 | [Claude Code](https://code.claude.com/docs/en/skills) | `~/.claude/skills/career-evidence-bank/` | `.claude/skills/career-evidence-bank/` |
 | [Cursor](https://cursor.com/help/customization/skills) | `~/.agents/skills/career-evidence-bank/` | `.agents/skills/career-evidence-bank/` |
 | [Gemini CLI](https://geminicli.com/docs/cli/using-agent-skills/) | `~/.agents/skills/career-evidence-bank/` | `.agents/skills/career-evidence-bank/` |
-| [WorkBuddy](https://cloud.tencent.com/document/product/1831/134432) | 在技能界面选择“添加技能 → 上传技能”，导入本地技能包 | 依产品界面 |
+| [WorkBuddy Enterprise](https://cloud.tencent.com/document/product/1831/134432) | 在技能界面选择“添加技能 → 上传技能”，导入本地技能包 | 依产品界面 |
 
 在 Codex 中可输入 `$career-evidence-bank`；Claude Code 和 Cursor 的调用语法各有不同；Gemini CLI 可用 `/skills list` 检查是否发现。**通用做法是直接用自然语言提出下面的任务**，让支持 Agent Skills 的产品按描述选择本 Skill。安装或更新后若未出现，请按相应产品文档刷新技能列表或重启会话。
 
-其他 Agent（包括未在本仓库实测的产品）若支持 Agent Skills 格式，请按其文档放置文件夹；若只支持普通提示词，可让它读取 `SKILL.md`，并在建库时按需读取 `references/fact-records.md`、在岗位匹配时读取 `references/job-tailoring.md`。普通提示词方式不保证自动发现或调用。
+其他版本的 WorkBuddy 和其他 Agent（包括未在本仓库实测的产品）若支持 Agent Skills 格式，请按其文档放置文件夹；若只支持普通提示词，可让它读取 `SKILL.md`，并在建库时按需读取 `references/fact-records.md`、在岗位匹配时读取 `references/job-tailoring.md`。如果 Agent 无法读取本地文件，就粘贴相关文件内容。普通提示词方式不保证自动发现或调用。
 
 ## 第一次使用
 
