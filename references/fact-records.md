@@ -1,47 +1,45 @@
 <!-- SPDX-FileCopyrightText: 2026 Yang Mingyu; SPDX-License-Identifier: GPL-3.0-only. See LICENSE. -->
 
-# 事实记录格式
+# Fact record format
 
-在建立或更新职业事实库时参考。格式可适配用户现有文档，不要求建数据库或填满所有字段。保留完整的叙事材料，同时让具体主张可以单独核对和挑选。
+Use this when building or updating a career evidence bank. Adapt the fields to an existing document; a database and fully populated fields are unnecessary. Preserve the broader narrative while making individual claims easy to verify and select.
 
-## 推荐字段
-
-| 字段 | 应记录什么 |
+| Field | Record |
 |---|---|
-| ID | 稳定编号，便于在简历草稿和核实问题中引用 |
-| 时间与场景 | 年月或大致阶段；公司、项目、课程或活动；不确定日期写范围 |
-| 事实主张 | 一条可单独判断真假的陈述，避免把职责、技术和结果混成一条 |
-| 本人贡献 | 独立负责、共同开发、协助、使用、审阅或待核实；写清与他人的分工 |
-| 做法与技术 | 实际采取的步骤、关键约束、方案选择和验证方法 |
-| 结果与阶段 | 练习、原型、测试、试产、量产、上线、维护等；数字需有来源 |
-| 来源 | 用户口述、旧简历、文件、提交、PR、Issue 或测试记录；能链接则链接，并标注读取日期 |
-| 核实状态 | 本人已确认、材料佐证、两者一致、来源冲突、待核实；可同时注明仍有疑点 |
-| 公开边界 | 可公开、仅概括、仅供内部资料库、待确认 |
-| 用途 | 可能对应的岗位能力，作为筛选线索，不自动写入简历 |
+| ID | Stable identifier for draft points and follow-up questions |
+| Time and context | Date or approximate period; employer, project, course, or activity; use a range when uncertain |
+| Claim | One independently checkable statement; separate responsibility, technology, and outcome |
+| Personal contribution | Owned, co-developed, assisted, used, reviewed, or unresolved; state team boundaries |
+| Method and technology | Actual steps, constraints, choices, and verification |
+| Result and stage | Exercise, prototype, test, pilot, production, launch, maintenance, etc.; source every number |
+| Sources | Interview, old resume, file, commit, PR, issue, or test record; link and record access date when possible |
+| Verification status | User confirmed, source supported, both aligned, conflicting sources, or unresolved; retain residual doubts |
+| Disclosure limit | Public, summarize only, private bank only, or pending confirmation |
+| Possible use | Role capabilities this could support; not automatic resume content |
 
-**来源和核实状态是两回事。** 例如，一个提交链接能佐证账号改了代码，但本人是否独立设计、功能是否进入量产，还要用别的证据或本人确认。用户口述可以支持保密项目的个人经历，同时要避免把未核实的数量或团队成果写成精确的个人业绩。
+**Source and verification status differ.** A commit may support that an account changed code, but not that the user independently designed the feature or that it reached production. A user's account of confidential work may support their personal experience without turning unverified quantities or team outcomes into precise individual achievements.
 
-## 单条匿名示例
+## Fictional record
 
-> ID：E-014  
-> 时间与场景：2025 年某校园节能监测课程项目  
-> 事实主张：为采集程序增加传感器异常值过滤，并在断线后恢复上传。  
-> 本人贡献：编写过滤与重连逻辑；硬件由另一名组员负责。  
-> 做法与技术：记录异常样本，设置可解释的阈值，并用断网重连测试验证。  
-> 结果与阶段：课程演示原型；没有部署到真实楼宇。  
-> 来源：学生本人访谈；仓库中可找到相关提交。  
-> 核实状态：本人已确认，提交记录佐证代码改动。  
-> 公开边界：可公开。
+> ID: E-014  
+> Time and context: A campus energy monitoring course project in 2025  
+> Claim: Added sensor outlier filtering and upload recovery after disconnection.  
+> Personal contribution: Wrote filtering and reconnection logic; another team member handled hardware.  
+> Method and technology: Logged anomalous samples, chose explainable thresholds, and tested network recovery.  
+> Result and stage: Course demonstration prototype; not deployed in a real building.  
+> Sources: Student interview; related repository commits.  
+> Verification status: Confirmed by the student; commits support the code changes.  
+> Disclosure limit: Public.
 
-示例完全虚构，不应当成为任何使用者的默认经历。
+This record is entirely fictional and must never be assumed to describe a user.
 
-## 背景资料建议结构
+## Suggested bank structure
 
-1. 当前目标与基本时间线。
-2. 公司、岗位、项目和产品的长篇叙述，保留技术过程。
-3. 事实记录表或按主题排列的事实条目。
-4. 来源索引及相互冲突之处。
-5. 高价值待核实问题。
-6. 更新日志：日期、变更的事实 ID、依据。
+1. Current goal and basic timeline.
+2. Longer descriptions of roles, projects, products, and technical work.
+3. Fact records organized as a table or by theme.
+4. Source index and conflicts.
+5. High-value unresolved questions.
+6. Change log with date, affected fact IDs, and basis for each change.
 
-用户若已有自己的章节结构，就在原结构中加入必要字段，不为遵循模板而重写全部资料。
+If the user already has a document structure, add the necessary fields there instead of rewriting everything to fit this outline.
