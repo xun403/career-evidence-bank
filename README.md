@@ -1,2 +1,57 @@
-# career-evidence-bank
-A Codex skill for building a sourced career evidence bank and tailoring truthful resume material.
+<!-- SPDX-FileCopyrightText: 2026 Yang Mingyu; SPDX-License-Identifier: GPL-3.0-only. See LICENSE. -->
+
+# Career Evidence Bank 职业事实库
+
+一个面向 Codex 的 Skill：先通过访谈、旧简历、项目材料及可访问的 GitHub 记录建立可追溯的职业资料库，需要时再从中按目标岗位挑选简历内容。
+
+它同时适合经历还少的学生和多年未更新简历的从业者。重点是**把事实收集完整、把本人贡献说准确**，不把仓库提交自动解释为项目主导或商业成果。
+
+## 能做什么
+
+- 从口述与现有资料重建经历时间线，找出缺口和冲突。
+- 在用户授权的范围内结合代码托管记录，区分代码证据、本人职责和交付结果。
+- 维护可更新的长篇背景资料及逐条可核实的事实记录。
+- 用户要求岗位匹配或简历时，把真实岗位 JD 映射到事实记录，再形成岗位版素材。
+
+不要求 GitHub 账号；没有具体 JD 也可以先建资料库。Skill 不负责自动投递，也不自动发布个人资料。
+
+## 安装
+
+只复制 `career-evidence-bank` 文件夹到 Codex 的技能目录，例如 Windows 下的 `%USERPROFILE%\.codex\skills\career-evidence-bank`，或 macOS／Linux 下的 `~/.codex/skills/career-evidence-bank`。具体目录以你的 Codex 配置为准。重新打开或刷新 Codex 后，可在请求中写 `$career-evidence-bank`。
+
+## 第一次使用
+
+一段经历口述或一份旧简历就能开始；GitHub 记录和目标岗位可以之后再补。附上资料并发送：
+
+> 用 `$career-evidence-bank` 先帮我建立职业事实库。请区分我确认的经历、资料能佐证的内容和待核实主张，记录我实际负责的范围及哪些内容可公开。先给出已有事实和少量最重要的追问，暂时不写简历。
+
+第一次整理通常会得到经历时间线、可逐条更新的事实记录、来源与冲突，以及待补充问题。之后提供新资料时让 Skill 更新对应条目；需要投递时再提供真实 JD，按岗位挑选素材。
+
+## 完整示例
+
+[虚构输入](examples/fictional-case-input.md)包含一名拟定前端工程师的口述、旧版简历、模拟工作与仓库记录、补充访谈、公开范围和目标 JD；[示例输出](examples/fictional-case-output.md)展示事实核对、可更新的记录、岗位匹配与简历素材。
+
+输入与输出由同一模型在同一对话中完成，用于说明处理方法。人物和资料均为虚构；本例未验证真实 GitHub 连接、自动触发或不同模型的稳定表现。
+
+## 后续使用示例
+
+> 用 `$career-evidence-bank` 看我的 GitHub 仓库和提交，更新现有职业资料。请区分仓库证据、我的实际负责范围和仍待核实的项目结果。
+
+> 用 `$career-evidence-bank` 对照这条嵌入式岗位 JD，从我的事实库挑选可公开、可面试解释的经历，给出岗位版简历要点。
+
+## 目录
+
+- `SKILL.md`：触发条件、核心流程与事实边界。
+- `references/fact-records.md`：事实记录字段和虚构示例。
+- `references/job-tailoring.md`：按岗位挑选与核对素材的方法。
+- `examples/`：一组完整的虚构输入与对应输出。
+
+## 隐私与开放范围
+
+本仓库只包含方法和虚构示例，不包含任何人的真实简历、联系方式、私有仓库内容或求职记录。使用者的职业资料应保存在自己的工作区。连接 GitHub、读取私有资料、向模型服务提交信息或公开简历时，按所用工具和用户授权单独处理。
+
+## 许可证
+
+本仓库内容采用 **GNU GPL v3.0 only**（`GPL-3.0-only`），仅授权第 3 版，不自动授权后续版本。Copyright (C) 2026 Yang Mingyu。完整条款见 [LICENSE](LICENSE)。分发修改版时须按该许可保留版权及许可声明、标明修改，并遵守相应的源码提供要求。
+
+本仓库的许可不自动适用于使用者输入的简历、私有资料或由此建立的个人职业事实库。
