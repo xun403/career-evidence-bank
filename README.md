@@ -85,7 +85,7 @@ git clone https://github.com/xun403/career-evidence-bank.git
 | [Gemini CLI](https://geminicli.com/docs/cli/using-agent-skills/) | `~/.agents/skills/career-evidence-bank/` | `.agents/skills/career-evidence-bank/` |
 | [WorkBuddy Enterprise](https://cloud.tencent.com/document/product/1831/134432) | 在技能界面选择“添加技能 → 上传技能”，导入本地技能包 | 依产品界面 |
 
-在 Codex 中可输入 `$career-evidence-bank`；Claude Code 和 Cursor 的调用语法各有不同；Gemini CLI 可用 `/skills list` 检查是否发现。**通用做法是直接用自然语言提出下面的任务**，让支持 Agent Skills 的产品按描述选择本 Skill。安装或更新后若未出现，请按相应产品文档刷新技能列表或重启会话。
+在 Codex 中可输入 `$career-evidence-bank`；Claude Code 和 Cursor 的调用语法各有不同；Gemini CLI 可用 `/skills list` 检查是否发现。**通用做法是直接用自然语言描述任务**，让支持 Agent Skills 的产品按描述选择本 Skill。安装或更新后若未出现，请按相应产品文档刷新技能列表或重启会话。
 
 其他版本的 WorkBuddy 和其他 Agent（包括未在本仓库实测的产品）若支持 Agent Skills 格式，请按其文档放置文件夹；若只支持普通提示词，可让它读取 `SKILL.md`，并在建库时按需读取 `references/fact-records.md`、在岗位匹配时读取 `references/job-tailoring.md`。如果 Agent 无法读取本地文件，就粘贴相关文件内容。普通提示词方式不保证自动发现或调用。
 
