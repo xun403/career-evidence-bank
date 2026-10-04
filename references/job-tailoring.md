@@ -1,17 +1,17 @@
 <!-- SPDX-FileCopyrightText: 2026 Yang Mingyu; SPDX-License-Identifier: GPL-3.0-only. See LICENSE. -->
 
-# 从事实库生成岗位版简历
+# Tailor application material from the evidence bank
 
-仅在用户请求岗位匹配、简历或投递材料时读取。
+Read this only when the user asks for role matching, a resume, or application material.
 
-## 输入与筛选
+## Input and selection
 
-优先使用岗位原文或链接；没有具体 JD 时可先做目标岗位的通用版，明确缺少针对性。把 JD 拆成职责、必备技能、加分项与行业背景，避免单看关键词出现次数。对每项要求标注：直接证据、相近可迁移经验、仅学习过、暂无证据。
+Prefer the original job description or its link. Without a specific description, a general target-role version is possible; say that it is less targeted. Separate responsibilities, required skills, preferred skills, and industry context. Do not count keywords as a substitute for evidence. Classify each requirement as direct evidence, transferable adjacent experience, studied only, or no evidence yet.
 
-从事实库挑选少量最相关的条目，优先看本人贡献、解决的问题、验证方式和交付阶段。允许把一条长经历拆成多个简历要点，也允许把相似事实合并，但每个要点都应能回溯到事实 ID。没有证据的数字或“主导”“精通”“量产”等词不得通过润色生成。
+Choose a small number of relevant records based on personal contribution, problem solved, verification, and delivery stage. A long experience may yield several points, and related facts may be combined, but each point must trace back to fact IDs. Editing must not manufacture metrics or claims such as “led,” “expert,” or “in production.”
 
-## 输出与复核
+## Draft and review
 
-先向用户说明建议突出哪些经历，以及哪些 JD 要求目前缺证据。写草稿时保留可追溯关系，供本人逐项核对。若用户要不同岗位版本，复用同一事实库，不维护互相矛盾的经历。若需要视觉简历，另选择合适模板与工具，并实际检查中文字体、分页和可编辑性。
+Explain which experiences to emphasize and which requirements lack evidence. Preserve traceability in the draft so the user can verify each point. Reuse the same bank for different roles rather than maintaining contradictory histories. If a formatted resume is requested, choose tools available in the current agent and check readability, page breaks, and editable output as applicable.
 
-面试准备可以从所选事实反向生成追问：为什么选这个方案、本人具体改了哪部分、失败路径怎么处理、如何验证、结果如何界定。答不上来的要点应缩小措辞或先补证据。
+For interview preparation, derive questions from selected facts: Why this approach? What did the user personally change? How were failures handled? How was it verified? How is the result bounded? Narrow or substantiate points the user cannot explain.
