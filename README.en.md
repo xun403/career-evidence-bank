@@ -19,7 +19,7 @@ The Skill does not automatically apply for jobs or publish personal information.
 
 ## Install in an agent
 
-Download this repository and **keep the entire `career-evidence-bank` folder**, including `SKILL.md` and `references/`. Put it in your agent's skills directory. `~` means your home directory; on Windows, this is commonly `%USERPROFILE%`. The paths below come from product documentation; they are installation examples, not a claim that we have run this Skill on every platform.
+Download this repository and **keep the entire `career-evidence-bank` folder**, including `SKILL.md` and `references/`. If a GitHub ZIP extracts to a folder with a suffix such as `-main`, rename it to `career-evidence-bank`; the final layout should be `skills-directory/career-evidence-bank/SKILL.md`. Put the folder in your agent's skills directory. `~` means your home directory; on Windows, this is commonly `%USERPROFILE%`. The paths below come from product documentation; they are installation examples, not a claim that we have run this Skill on every platform.
 
 | Agent | User-level location or import | Project-level location |
 |---|---|---|
@@ -27,11 +27,11 @@ Download this repository and **keep the entire `career-evidence-bank` folder**, 
 | [Claude Code](https://code.claude.com/docs/en/skills) | `~/.claude/skills/career-evidence-bank/` | `.claude/skills/career-evidence-bank/` |
 | [Cursor](https://cursor.com/help/customization/skills) | `~/.agents/skills/career-evidence-bank/` | `.agents/skills/career-evidence-bank/` |
 | [Gemini CLI](https://geminicli.com/docs/cli/using-agent-skills/) | `~/.agents/skills/career-evidence-bank/` | `.agents/skills/career-evidence-bank/` |
-| [WorkBuddy](https://cloud.tencent.com/document/product/1831/134432) | In the Skills UI, choose Add Skill → Upload Skill and import the local package | Follow the product UI |
+| [WorkBuddy Enterprise](https://cloud.tencent.com/document/product/1831/134432) | In the Skills UI, choose Add Skill → Upload Skill and import the local package | Follow the product UI |
 
 In Codex, you can type `$career-evidence-bank`. Claude Code and Cursor use their own invocation syntax; Gemini CLI provides `/skills list` to check discovery. **The portable way to start is to describe the task in ordinary language**, so a compatible agent can select the Skill from its description. If it does not appear after installation or an update, refresh the skills list or restart the session as your agent's documentation recommends.
 
-For other agents, including products not tested here, follow their instructions if they support the Agent Skills format. If an agent only accepts ordinary prompts, ask it to read `SKILL.md` and, when relevant, `references/fact-records.md` for building the bank or `references/job-tailoring.md` for role matching. Prompt-only use does not guarantee automatic discovery or activation.
+For other WorkBuddy editions and other agents, including products not tested here, follow their instructions if they support the Agent Skills format. If an agent only accepts ordinary prompts, ask it to read `SKILL.md` and, when relevant, `references/fact-records.md` for building the bank or `references/job-tailoring.md` for role matching. If it cannot read local files, paste the relevant file contents. Prompt-only use does not guarantee automatic discovery or activation.
 
 ## First use
 
